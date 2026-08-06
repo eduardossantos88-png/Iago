@@ -24,40 +24,38 @@
 
         .container {
             background: #16213e;
-            padding: 30px 40px;
+            padding: 20px;
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
             text-align: center;
-            max-width: 700px;
+            max-width: 650px;
             width: 100%;
             border: 1px solid #0f3460;
         }
 
         h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 2rem;
             color: #e94560;
             text-shadow: 0 0 15px rgba(233, 69, 96, 0.5);
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+            margin-bottom: 5px;
         }
 
         .subtitle {
             color: #a8a8b3;
-            margin-bottom: 25px;
-            font-size: 1rem;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
         }
 
         .menu-screen {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
         }
 
         .btn-group {
             display: flex;
-            gap: 25px;
+            gap: 15px;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -66,60 +64,55 @@
             background: #0f3460;
             border: none;
             color: #fff;
-            padding: 14px 45px;
-            font-size: 1.2rem;
+            padding: 12px 35px;
+            font-size: 1.1rem;
             font-weight: 600;
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 0 #0a1a2e;
-            letter-spacing: 1px;
-            min-width: 140px;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
+            box-shadow: 0 4px 0 #0a1a2e;
+            min-width: 120px;
         }
 
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 0 #0a1a2e;
-            background: #1a4a7a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 #0a1a2e;
         }
 
         .btn:active {
-            transform: translateY(5px);
+            transform: translateY(4px);
             box-shadow: 0 2px 0 #0a1a2e;
         }
 
         .btn-play {
             background: #e94560;
-            box-shadow: 0 5px 0 #a52a3f;
+            box-shadow: 0 4px 0 #a52a3f;
         }
 
         .btn-play:hover {
             background: #ff5a7a;
-            box-shadow: 0 8px 0 #a52a3f;
         }
 
         .btn-skins {
             background: #533483;
-            box-shadow: 0 5px 0 #3a1f5c;
+            box-shadow: 0 4px 0 #3a1f5c;
         }
 
         .btn-skins:hover {
             background: #6f4a9e;
-            box-shadow: 0 8px 0 #3a1f5c;
         }
 
         .skin-selector {
             background: #1a1a2e;
-            padding: 20px;
-            border-radius: 20px;
-            margin: 15px 0;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 10px 0;
             display: none;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
             border: 1px solid #533483;
+            width: 100%;
         }
 
         .skin-selector.active {
@@ -128,27 +121,26 @@
 
         .skin-options {
             display: flex;
-            gap: 40px;
+            gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .skin-option {
             background: #0f3460;
-            border-radius: 16px;
-            padding: 15px 25px;
+            border-radius: 12px;
+            padding: 10px 20px;
             cursor: pointer;
             transition: all 0.3s;
             border: 3px solid transparent;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 8px;
+            gap: 5px;
         }
 
         .skin-option:hover {
             transform: scale(1.05);
-            background: #1a4a7a;
         }
 
         .skin-option.selected {
@@ -158,8 +150,8 @@
         }
 
         .skin-option img {
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             object-fit: cover;
             background: #0d0d0d;
@@ -167,8 +159,7 @@
         }
 
         .skin-name {
-            font-size: 0.9rem;
-            font-weight: 500;
+            font-size: 0.8rem;
             color: #ccc;
         }
 
@@ -176,7 +167,7 @@
             display: none;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
         }
 
         .game-area.active {
@@ -187,8 +178,7 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            padding: 0 5px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #eee;
             flex-wrap: wrap;
@@ -197,9 +187,8 @@
 
         .game-header span {
             background: #0f3460;
-            padding: 8px 20px;
-            border-radius: 30px;
-            box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+            padding: 5px 15px;
+            border-radius: 20px;
         }
 
         .score {
@@ -208,11 +197,11 @@
 
         canvas {
             background: #0d0d0d;
-            border-radius: 18px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), inset 0 0 30px rgba(0,0,0,0.5);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
             border: 3px solid #0f3460;
             width: 100%;
-            max-width: 500px;
+            max-width: 400px;
             height: auto;
             aspect-ratio: 1/1;
             display: block;
@@ -223,10 +212,11 @@
         .game-over {
             display: none;
             background: rgba(0,0,0,0.85);
-            padding: 25px 30px;
-            border-radius: 20px;
+            padding: 20px;
+            border-radius: 15px;
             margin-top: 10px;
             border: 2px solid #e94560;
+            width: 100%;
         }
 
         .game-over.active {
@@ -235,25 +225,25 @@
 
         .game-over h2 {
             color: #e94560;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         .game-over p {
-            font-size: 1.2rem;
-            margin: 10px 0;
+            font-size: 1rem;
+            margin: 8px 0;
         }
 
         .btn-restart {
             background: #e94560;
             border: none;
             color: #fff;
-            padding: 12px 40px;
+            padding: 10px 30px;
             border-radius: 50px;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
             cursor: pointer;
             transition: 0.3s;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
         .btn-restart:hover {
@@ -265,12 +255,11 @@
             background: #533483;
             border: none;
             color: #fff;
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-size: 0.9rem;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.8rem;
             cursor: pointer;
             transition: 0.3s;
-            margin-top: 5px;
         }
 
         .btn-back:hover {
@@ -278,258 +267,145 @@
         }
 
         .controls-info {
-            font-size: 0.85rem;
-            color: #888;
+            font-size: 0.75rem;
+            color: #666;
             margin-top: 5px;
-        }
-
-        @media (max-width: 600px) {
-            .container { padding: 20px; }
-            h1 { font-size: 2rem; }
-            .btn { padding: 12px 25px; font-size: 1rem; min-width: 100px; }
-            .btn-group { gap: 15px; }
-            .game-header span { font-size: 0.9rem; padding: 5px 12px; }
         }
     </style>
 </head>
 <body>
-    <div class="container" id="app">
+    <div class="container">
         <h1>🐍 IAGO SNAKE</h1>
         <div class="subtitle">Coma hambúrgueres e pizzas para crescer!</div>
 
-        <!-- TELA DE MENU -->
+        <!-- MENU -->
         <div id="menuScreen" class="menu-screen">
             <div class="btn-group">
-                <button class="btn btn-play" id="btnPlay">▶ JOGAR</button>
-                <button class="btn btn-skins" id="btnSkins">🎨 SKINS</button>
+                <button class="btn btn-play" onclick="iniciarJogo()">▶ JOGAR</button>
+                <button class="btn btn-skins" onclick="toggleSkins()">🎨 SKINS</button>
             </div>
 
             <div id="skinSelector" class="skin-selector">
-                <h3 style="color: #ddd; margin-bottom: 5px;">Escolha a cabeça do Iago</h3>
+                <h3 style="color: #ddd; font-size: 1rem;">Escolha a cabeça</h3>
                 <div class="skin-options">
-                    <div class="skin-option selected" data-skin="normal" id="skinNormal">
-                        <img src="https://i.postimg.cc/yNYxSrT8/Screenshot-2026-08-06-19-41-52-969-com-google-android-googlequicksearchbox.png" 
-                             alt="Iago Normal"
+                    <div class="skin-option selected" data-skin="normal" onclick="selecionarSkin('normal')">
+                        <img id="imgNormal" src="https://i.postimg.cc/yNYxSrT8/Screenshot-2026-08-06-19-41-52-969-com-google-android-googlequicksearchbox.png" 
+                             alt="Normal" 
                              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23FED2AF%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Cpath d=%22M30 65 Q50 80 70 65%22 stroke=%22%23fff%22 stroke-width=%226%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3C/svg%3E'">
-                        <span class="skin-name">Iago Normal</span>
+                        <span class="skin-name">Normal</span>
                     </div>
-                    <div class="skin-option" data-skin="maquiado" id="skinMaquiado">
-                        <img src="https://i.postimg.cc/6pz5wfN4/Screenshot-2026-08-06-19-42-29-829-com-google-android-googlequicksearchbox.png" 
-                             alt="Iago Maquiado"
+                    <div class="skin-option" data-skin="maquiado" onclick="selecionarSkin('maquiado')">
+                        <img id="imgMaquiado" src="https://i.postimg.cc/6pz5wfN4/Screenshot-2026-08-06-19-42-29-829-com-google-android-googlequicksearchbox.png" 
+                             alt="Maquiado" 
                              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23FED2AF%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Cpath d=%22M30 65 Q50 80 70 65%22 stroke=%22%23fff%22 stroke-width=%226%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3Ccircle cx=%2225%22 cy=%2230%22 r=%228%22 fill=%22%23ff69b4%22 opacity=%220.7%22/%3E%3Ccircle cx=%2275%22 cy=%2230%22 r=%228%22 fill=%22%23ff69b4%22 opacity=%220.7%22/%3E%3C/svg%3E'">
-                        <span class="skin-name">Iago Maquiado</span>
+                        <span class="skin-name">Maquiado</span>
                     </div>
                 </div>
-                <p style="color: #aaa; font-size: 0.8rem; margin-top: 5px;">Clique na skin para selecionar</p>
+                <p style="color: #888; font-size: 0.7rem;">Clique na skin para selecionar</p>
             </div>
         </div>
-            <!-- ÁREA DO JOGO -->
-    <div id="gameArea" class="game-area">
-        <div class="game-header">
-            <span>🍔 <span id="scoreDisplay" class="score">0</span></span>
-            <span>⏱️ <span id="timeScoreDisplay" class="score">+0</span></span>
-            <span>🏆 <span id="highScoreDisplay">0</span></span>
+
+        <!-- JOGO -->
+        <div id="gameArea" class="game-area">
+            <div class="game-header">
+                <span>🍔 <span id="scoreDisplay" class="score">0</span></span>
+                <span>⏱️ <span id="timeScoreDisplay" class="score">+0</span></span>
+                <span>🏆 <span id="highScoreDisplay">0</span></span>
+            </div>
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <button class="btn-back" onclick="voltarMenu()">← Voltar</button>
+            <div id="gameOver" class="game-over">
+                <h2>💀 GAME OVER</h2>
+                <p>Pontuação: <span id="finalScore">0</span></p>
+                <button class="btn-restart" onclick="reiniciarJogo()">🔄 Jogar Novamente</button>
+            </div>
+            <div class="controls-info">⬆ ⬇ ⬅ ➡  |  Espaço = Pausar</div>
         </div>
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
-        <button class="btn-back" id="btnBackMenu">← Voltar ao Menu</button>
-        <div id="gameOver" class="game-over">
-            <h2>💀 GAME OVER</h2>
-            <p>Pontuação: <span id="finalScore">0</span></p>
-            <p style="font-size:0.9rem; color:#bbb;">A cobrinha ficou muito gorda ou bateu em si mesma!</p>
-            <button class="btn-restart" id="btnRestart">🔄 Jogar Novamente</button>
-        </div>
-        <div class="controls-info">⬆ ⬇ ⬅ ➡  |  Espaço = Pausar</div>
     </div>
-</div>
 
-<script>
-    // ========== CONFIGURAÇÕES ==========
-    const canvas = document.getElementById('gameCanvas');
-    const ctx = canvas.getContext('2d');
-    const size = 20;
-    const cols = 20;
-    const rows = 20;
+    <script>
+        // ===================== CONFIGURAÇÕES =====================
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const SIZE = 20;
+        const COLS = 20;
+        const ROWS = 20;
+        // ===================== ELEMENTOS =====================
+const menuScreen = document.getElementById('menuScreen');
+const gameArea = document.getElementById('gameArea');
+const skinSelector = document.getElementById('skinSelector');
+const scoreDisplay = document.getElementById('scoreDisplay');
+const timeScoreDisplay = document.getElementById('timeScoreDisplay');
+const highScoreDisplay = document.getElementById('highScoreDisplay');
+const finalScore = document.getElementById('finalScore');
+const gameOverDiv = document.getElementById('gameOver');
 
-    // ========== ELEMENTOS DOM ==========
-    const menuScreen = document.getElementById('menuScreen');
-    const gameArea = document.getElementById('gameArea');
-    const skinSelector = document.getElementById('skinSelector');
-    const btnPlay = document.getElementById('btnPlay');
-    const btnSkins = document.getElementById('btnSkins');
-    const btnBackMenu = document.getElementById('btnBackMenu');
-    const btnRestart = document.getElementById('btnRestart');
-    const scoreDisplay = document.getElementById('scoreDisplay');
-    const timeScoreDisplay = document.getElementById('timeScoreDisplay');
-    const highScoreDisplay = document.getElementById('highScoreDisplay');
-    const finalScore = document.getElementById('finalScore');
-    const gameOverDiv = document.getElementById('gameOver');
-    const skinNormal = document.getElementById('skinNormal');
-    const skinMaquiado = document.getElementById('skinMaquiado');
+// ===================== ESTADO =====================
+let snake = [];
+let food = {};
+let direction = { dx: 1, dy: 0 };
+let nextDirection = { dx: 1, dy: 0 };
+let score = 0;
+let timeScore = 0;
+let highScore = 0;
+let gameRunning = false;
+let gameInterval = null;
+let timeInterval = null;
+let isPaused = false;
+let currentSkin = 'normal';
+let snakeWidth = 10;
 
-    // ========== ESTADO DO JOGO ==========
-    let snake = [];
-    let food = {};
-    let direction = { dx: 1, dy: 0 };
-    let nextDirection = { dx: 1, dy: 0 };
-    let score = 0;
-    let timeScore = 0;
-    let highScore = 0;
-    let gameRunning = false;
-    let gameInterval = null;
-    let timeInterval = null;
-    let isPaused = false;
-    let currentSkin = 'normal';
-    let snakeWidth = 10;
-    let moveInterval = 120;
+// ===================== HIGH SCORE =====================
+try {
+    highScore = parseInt(localStorage.getItem('snakeHighScore')) || 0;
+} catch(e) { highScore = 0; }
+highScoreDisplay.textContent = highScore;
 
-    // ========== CARREGAR HIGH SCORE ==========
-    try {
-        highScore = parseInt(localStorage.getItem('snakeHighScore')) || 0;
-    } catch(e) {
-        highScore = 0;
-    }
-            // ========== CARREGAR IMAGENS DAS SKINS ==========
-        let headImageNormal = new Image();
-        let headImageMaquiado = new Image();
-        
-        headImageNormal.src = 'https://i.postimg.cc/yNYxSrT8/Screenshot-2026-08-06-19-41-52-969-com-google-android-googlequicksearchbox.png';
-        headImageMaquiado.src = 'https://i.postimg.cc/6pz5wfN4/Screenshot-2026-08-06-19-42-29-829-com-google-android-googlequicksearchbox.png';
-        
-        // Fallback para imagens (SVG)
-        const fallbackNormal = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23FED2AF%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Cpath d=%22M30 65 Q50 80 70 65%22 stroke=%22%23fff%22 stroke-width=%226%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3C/svg%3E';
-        const fallbackMaquiado = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23FED2AF%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Cpath d=%22M30 65 Q50 80 70 65%22 stroke=%22%23fff%22 stroke-width=%226%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3Ccircle cx=%2225%22 cy=%2230%22 r=%228%22 fill=%22%23ff69b4%22 opacity=%220.7%22/%3E%3Ccircle cx=%2275%22 cy=%2230%22 r=%228%22 fill=%22%23ff69b4%22 opacity=%220.7%22/%3E%3C/svg%3E';
+// ===================== IMAGENS =====================
+const imgNormal = new Image();
+const imgMaquiado = new Image();
+imgNormal.src = 'https://i.postimg.cc/yNYxSrT8/Screenshot-2026-08-06-19-41-52-969-com-google-android-googlequicksearchbox.png';
+imgMaquiado.src = 'https://i.postimg.cc/6pz5wfN4/Screenshot-2026-08-06-19-42-29-829-com-google-android-googlequicksearchbox.png';
 
-        headImageNormal.onerror = function() {
-            console.warn('⚠️ Falha ao carregar Iago Normal, usando fallback');
-            this.src = fallbackNormal;
-        };
-        headImageMaquiado.onerror = function() {
-            console.warn('⚠️ Falha ao carregar Iago Maquiado, usando fallback');
-            this.src = fallbackMaquiado;
-        };
+// Fallback para imagens
+const fallbackNormal = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23FED2AF%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Cpath d=%22M30 65 Q50 80 70 65%22 stroke=%22%23fff%22 stroke-width=%226%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3C/svg%3E';
+const fallbackMaquiado = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23FED2AF%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%2210%22 fill=%22%23fff%22/%3E%3Ccircle cx=%2235%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Ccircle cx=%2265%22 cy=%2240%22 r=%225%22 fill=%22%23000%22/%3E%3Cpath d=%22M30 65 Q50 80 70 65%22 stroke=%22%23fff%22 stroke-width=%226%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3Ccircle cx=%2225%22 cy=%2230%22 r=%228%22 fill=%22%23ff69b4%22 opacity=%220.7%22/%3E%3Ccircle cx=%2275%22 cy=%2230%22 r=%228%22 fill=%22%23ff69b4%22 opacity=%220.7%22/%3E%3C/svg%3E';
 
-        // ========== FUNÇÃO PARA DESENHAR CORPO CONTÍNUO ==========
-        function drawContinuousBody() {
-            if (snake.length < 2) return;
-            
-            ctx.lineCap = 'round';
-            ctx.lineJoin = 'round';
-            ctx.strokeStyle = '#FED2AF';
-            ctx.lineWidth = snakeWidth;
-            
-            ctx.beginPath();
-            const first = snake[0];
-            ctx.moveTo(first.x * size + size/2, first.y * size + size/2);
-            
-            for (let i = 1; i < snake.length; i++) {
-                const seg = snake[i];
-                ctx.lineTo(seg.x * size + size/2, seg.y * size + size/2);
-            }
-            ctx.stroke();
-
-            // Contorno
-            ctx.strokeStyle = '#E8C09A';
-            ctx.lineWidth = snakeWidth + 3;
-            ctx.globalAlpha = 0.2;
-            ctx.beginPath();
-            const first2 = snake[0];
-            ctx.moveTo(first2.x * size + size/2, first2.y * size + size/2);
-            for (let i = 1; i < snake.length; i++) {
-                const seg = snake[i];
-                ctx.lineTo(seg.x * size + size/2, seg.y * size + size/2);
-            }
-            ctx.stroke();
-            ctx.globalAlpha = 1;
-
-            // ===== MINI BUNDINHA =====
-            if (snake.length > 3) {
-                const tail = snake[snake.length - 1];
-                const tailPrev = snake[snake.length - 2];
-                const tx = tail.x * size + size/2;
-                const ty = tail.y * size + size/2;
-                const tpx = tailPrev.x * size + size/2;
-                const tpy = tailPrev.y * size + size/2;
-                
-                const angle = Math.atan2(ty - tpy, tx - tpx);
-                const bundinhaSize = snakeWidth * 0.5;
-                
-                ctx.fillStyle = '#FED2AF';
-                ctx.strokeStyle = '#E8C09A';
-                ctx.lineWidth = 2;
-                
-                ctx.beginPath();
-                ctx.arc(tx - Math.cos(angle) * bundinhaSize * 0.3, 
-                        ty - Math.sin(angle) * bundinhaSize * 0.3, 
-                        bundinhaSize, 0, Math.PI * 2);
-                ctx.fill();
-                ctx.stroke();
-                
-                ctx.beginPath();
-                ctx.moveTo(tx - Math.cos(angle) * bundinhaSize * 0.6, 
-                          ty - Math.sin(angle) * bundinhaSize * 0.6);
-                ctx.quadraticCurveTo(
-                    tx - Math.cos(angle - 0.5) * bundinhaSize * 1.2,
-                    ty - Math.sin(angle - 0.5) * bundinhaSize * 1.2,
-                    tx - Math.cos(angle) * bundinhaSize * 1.8,
-                    ty - Math.sin(angle) * bundinhaSize * 1.8
-                );
-                ctx.strokeStyle = '#FED2AF';
-                ctx.lineWidth = 3;
-                ctx.stroke();
-            }
+imgNormal.onerror = function() { this.src = fallbackNormal; };
+imgMaquiado.onerror = function() { this.src = fallbackMaquiado; };
+                // ===================== FUNÇÕES =====================
+        function toggleSkins() {
+            skinSelector.classList.toggle('active');
         }
 
-        // ========== FUNÇÃO PARA DESENHAR CABEÇA ==========
-        function drawSnakeHead(x, y) {
-            const cx = x * size + size/2;
-            const cy = y * size + size/2;
-            const r = snakeWidth / 2 + 4;
-            
-            const img = currentSkin === 'maquiado' ? headImageMaquiado : headImageNormal;
-            
-            if (img.complete && img.naturalWidth > 0 && img.naturalHeight > 0) {
-                try {
-                    ctx.save();
-                    ctx.beginPath();
-                    ctx.arc(cx, cy, r, 0, Math.PI * 2);
-                    ctx.clip();
-                    ctx.drawImage(img, cx - r, cy - r, r * 2, r * 2);
-                    ctx.restore();
-                } catch(e) {
-                    drawFallbackHead(cx, cy, r);
-                }
-            } else {
-                drawFallbackHead(cx, cy, r);
-            }
+        function selecionarSkin(skin) {
+            currentSkin = skin;
+            document.querySelectorAll('.skin-option').forEach(el => el.classList.remove('selected'));
+            document.querySelector(`.skin-option[data-skin="${skin}"]`).classList.add('selected');
         }
 
-        function drawFallbackHead(cx, cy, r) {
-            ctx.beginPath();
-            ctx.arc(cx, cy, r, 0, Math.PI * 2);
-            ctx.fillStyle = '#FED2AF';
-            ctx.fill();
-            ctx.strokeStyle = '#E8C09A';
-            ctx.lineWidth = 2;
-            ctx.stroke();
-            
-            // Olhos simples
-            ctx.fillStyle = 'white';
-            ctx.beginPath();
-            ctx.arc(cx - 5, cy - 3, 4, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.beginPath();
-            ctx.arc(cx + 5, cy - 3, 4, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.fillStyle = '#222';
-            ctx.beginPath();
-            ctx.arc(cx - 4 + direction.dx, cy - 3 + direction.dy, 2, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.beginPath();
-            ctx.arc(cx + 6 + direction.dx, cy - 3 + direction.dy, 2, 0, Math.PI * 2);
-            ctx.fill();
+        function iniciarJogo() {
+            skinSelector.classList.remove('active');
+            menuScreen.style.display = 'none';
+            gameArea.classList.add('active');
+            highScoreDisplay.textContent = highScore;
+            initGame();
         }
 
-        // ========== FUNÇÕES DO JOGO ==========
+        function voltarMenu() {
+            gameRunning = false;
+            clearInterval(gameInterval);
+            clearInterval(timeInterval);
+            gameArea.classList.remove('active');
+            menuScreen.style.display = 'flex';
+            gameOverDiv.classList.remove('active');
+        }
+
+        function reiniciarJogo() {
+            initGame();
+        }
+
+        // ===================== JOGO =====================
         function initGame() {
             snake = [
                 { x: 10, y: 10 },
@@ -546,13 +422,12 @@
             gameOverDiv.classList.remove('active');
             spawnFood();
             updateScore();
-            highScoreDisplay.textContent = highScore;
             gameRunning = true;
             isPaused = false;
             
             clearInterval(gameInterval);
             clearInterval(timeInterval);
-            gameInterval = setInterval(gameLoop, moveInterval);
+            gameInterval = setInterval(gameLoop, 120);
             
             timeInterval = setInterval(() => {
                 if (gameRunning && !isPaused) {
@@ -571,8 +446,8 @@
             let attempts = 0;
             do {
                 pos = {
-                    x: Math.floor(Math.random() * cols),
-                    y: Math.floor(Math.random() * rows)
+                    x: Math.floor(Math.random() * COLS),
+                    y: Math.floor(Math.random() * ROWS)
                 };
                 attempts++;
             } while ((snake.some(s => s.x === pos.x && s.y === pos.y)) && attempts < 100);
@@ -590,10 +465,10 @@
             let head = { x: snake[0].x + direction.dx, y: snake[0].y + direction.dy };
 
             // Wrap-around
-            if (head.x < 0) head.x = cols - 1;
-            if (head.x >= cols) head.x = 0;
-            if (head.y < 0) head.y = rows - 1;
-            if (head.y >= rows) head.y = 0;
+            if (head.x < 0) head.x = COLS - 1;
+            if (head.x >= COLS) head.x = 0;
+            if (head.y < 0) head.y = ROWS - 1;
+            if (head.y >= ROWS) head.y = 0;
 
             const ateFood = (head.x === food.x && head.y === food.y);
 
@@ -614,7 +489,7 @@
                 return;
             }
 
-            if (snake.length >= cols * rows) {
+            if (snake.length >= COLS * ROWS) {
                 endGame();
                 return;
             }
@@ -629,9 +504,7 @@
             finalScore.textContent = totalScore;
             if (totalScore > highScore) {
                 highScore = totalScore;
-                try {
-                    localStorage.setItem('snakeHighScore', highScore.toString());
-                } catch(e) {}
+                try { localStorage.setItem('snakeHighScore', highScore.toString()); } catch(e) {}
                 highScoreDisplay.textContent = highScore;
             }
             draw();
@@ -643,36 +516,95 @@
             timeScoreDisplay.textContent = `+${timeScore}`;
         }
 
-        // ========== DESENHO ==========
+        // ===================== DESENHO =====================
         function draw() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+            // Grid
             ctx.strokeStyle = '#1a2a1a';
             ctx.lineWidth = 0.3;
-            for (let i = 0; i <= cols; i++) {
+            for (let i = 0; i <= COLS; i++) {
                 ctx.beginPath();
-                ctx.moveTo(i * size, 0);
-                ctx.lineTo(i * size, canvas.height);
+                ctx.moveTo(i * SIZE, 0);
+                ctx.lineTo(i * SIZE, canvas.height);
                 ctx.stroke();
                 ctx.beginPath();
-                ctx.moveTo(0, i * size);
-                ctx.lineTo(canvas.width, i * size);
+                ctx.moveTo(0, i * SIZE);
+                ctx.lineTo(canvas.width, i * SIZE);
                 ctx.stroke();
             }
 
-            ctx.font = `${size-2}px Arial`;
+            // Comida
+            ctx.font = `${SIZE-2}px Arial`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillText(food.type, food.x * size + size/2, food.y * size + size/2);
+            ctx.fillText(food.type, food.x * SIZE + SIZE/2, food.y * SIZE + SIZE/2);
 
+            // Corpo
             if (snake.length > 1) {
-                drawContinuousBody();
+                ctx.lineCap = 'round';
+                ctx.lineJoin = 'round';
+                ctx.strokeStyle = '#FED2AF';
+                ctx.lineWidth = snakeWidth;
+                ctx.beginPath();
+                ctx.moveTo(snake[0].x * SIZE + SIZE/2, snake[0].y * SIZE + SIZE/2);
+                for (let i = 1; i < snake.length; i++) {
+                    ctx.lineTo(snake[i].x * SIZE + SIZE/2, snake[i].y * SIZE + SIZE/2);
+                }
+                ctx.stroke();
+
+                // Bundinha
+                if (snake.length > 3) {
+                    const tail = snake[snake.length - 1];
+                    const tailPrev = snake[snake.length - 2];
+                    const tx = tail.x * SIZE + SIZE/2;
+                    const ty = tail.y * SIZE + SIZE/2;
+                    const tpx = tailPrev.x * SIZE + SIZE/2;
+                    const tpy = tailPrev.y * SIZE + SIZE/2;
+                    const angle = Math.atan2(ty - tpy, tx - tpx);
+                    const bSize = snakeWidth * 0.5;
+                    
+                    ctx.fillStyle = '#FED2AF';
+                    ctx.strokeStyle = '#E8C09A';
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(tx - Math.cos(angle) * bSize * 0.3, ty - Math.sin(angle) * bSize * 0.3, bSize, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.stroke();
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(tx - Math.cos(angle) * bSize * 0.6, ty - Math.sin(angle) * bSize * 0.6);
+                    ctx.quadraticCurveTo(tx - Math.cos(angle - 0.5) * bSize * 1.2, ty - Math.sin(angle - 0.5) * bSize * 1.2, tx - Math.cos(angle) * bSize * 1.8, ty - Math.sin(angle) * bSize * 1.8);
+                    ctx.strokeStyle = '#FED2AF';
+                    ctx.lineWidth = 3;
+                    ctx.stroke();
+                }
             }
 
+            // Cabeça
             if (snake.length > 0) {
-                drawSnakeHead(snake[0].x, snake[0].y);
+                const cx = snake[0].x * SIZE + SIZE/2;
+                const cy = snake[0].y * SIZE + SIZE/2;
+                const r = snakeWidth / 2 + 4;
+                const img = currentSkin === 'maquiado' ? imgMaquiado : imgNormal;
+                
+                if (img.complete && img.naturalWidth > 0) {
+                    try {
+                        ctx.save();
+                        ctx.beginPath();
+                        ctx.arc(cx, cy, r, 0, Math.PI * 2);
+                        ctx.clip();
+                        ctx.drawImage(img, cx - r, cy - r, r * 2, r * 2);
+                        ctx.restore();
+                    } catch(e) {
+                        drawFallbackHead(cx, cy, r);
+                    }
+                } else {
+                    drawFallbackHead(cx, cy, r);
+                }
             }
 
+            // Mensagens
             if (!gameRunning && gameOverDiv.classList.contains('active')) {
                 ctx.fillStyle = 'rgba(0,0,0,0.6)';
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -692,7 +624,31 @@
             }
         }
 
-        // ========== CONTROLES ==========
+        function drawFallbackHead(cx, cy, r) {
+            ctx.beginPath();
+            ctx.arc(cx, cy, r, 0, Math.PI * 2);
+            ctx.fillStyle = '#FED2AF';
+            ctx.fill();
+            ctx.strokeStyle = '#E8C09A';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(cx - 5, cy - 3, 4, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(cx + 5, cy - 3, 4, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#222';
+            ctx.beginPath();
+            ctx.arc(cx - 4 + direction.dx, cy - 3 + direction.dy, 2, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(cx + 6 + direction.dx, cy - 3 + direction.dy, 2, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        // ===================== CONTROLES TECLADO =====================
         document.addEventListener('keydown', function(e) {
             if (!gameRunning) return;
             if (e.key === ' ' || e.key === 'Space') {
@@ -701,7 +657,6 @@
                 draw();
                 return;
             }
-
             const keyMap = {
                 'ArrowUp': { dx: 0, dy: -1 },
                 'ArrowDown': { dx: 0, dy: 1 },
@@ -716,55 +671,7 @@
             }
         });
 
-        // ========== MENU E SKINS (COM TRATAMENTO DE ERRO) ==========
-        function selectSkin(skin) {
-            currentSkin = skin;
-            document.querySelectorAll('.skin-option').forEach(function(el) {
-                el.classList.remove('selected');
-            });
-            if (skin === 'normal') {
-                skinNormal.classList.add('selected');
-            } else {
-                skinMaquiado.classList.add('selected');
-            }
-        }
-
-        skinNormal.addEventListener('click', function() { selectSkin('normal'); });
-        skinMaquiado.addEventListener('click', function() { selectSkin('maquiado'); });
-
-        btnSkins.addEventListener('click', function() {
-            skinSelector.classList.toggle('active');
-        });
-
-        btnPlay.addEventListener('click', function() {
-            try {
-                skinSelector.classList.remove('active');
-                menuScreen.style.display = 'none';
-                gameArea.classList.add('active');
-                highScoreDisplay.textContent = highScore;
-                initGame();
-            } catch(e) {
-                console.error('Erro ao iniciar jogo:', e);
-                alert('Erro ao iniciar o jogo. Tente novamente.');
-            }
-        });
-
-        btnBackMenu.addEventListener('click', function() {
-            gameRunning = false;
-            clearInterval(gameInterval);
-            clearInterval(timeInterval);
-            gameArea.classList.remove('active');
-            menuScreen.style.display = 'flex';
-            gameOverDiv.classList.remove('active');
-        });
-
-        btnRestart.addEventListener('click', function() {
-            initGame();
-        });
-
-        highScoreDisplay.textContent = highScore;
-
-        // ========== TOQUE PARA MOBILE ==========
+        // ===================== TOQUE MOBILE =====================
         let touchStartX = 0, touchStartY = 0;
         canvas.addEventListener('touchstart', function(e) {
             const touch = e.touches[0];
@@ -795,8 +702,7 @@
             touchStartY = 0;
         });
 
-        console.log('🐍 Jogo da Cobrinha - Iago Snake carregado!');
-        console.log('📸 Skins carregadas com sucesso!');
+        console.log('🐍 Jogo da Cobrinha carregado!');
     </script>
 </body>
 </html>
